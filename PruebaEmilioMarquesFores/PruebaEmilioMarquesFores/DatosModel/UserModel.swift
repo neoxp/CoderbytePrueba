@@ -17,11 +17,11 @@ struct JSONURLData: Decodable{
 struct User:Decodable, Identifiable {
     let id: Int
     let name: String
-    let birthdate: String
+    let birthdate: Date
     
     
     //Aquí iniciamos el init del Modelo Usuarios
-    init (id:Int, name:String, birthdate:String){
+    init (id:Int, name:String, birthdate:Date){
         
         self.id = id
         self.name = name
